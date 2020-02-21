@@ -4,21 +4,22 @@ import { Transcript } from 'transcript-model';
 import TranscriptEditor, {
   convertFromTranscript,
   convertToTranscript,
+  convertToJSON,
   withTime,
   withWords,
 } from '../../src';
 import VideoPlayer from './VideoPlayer';
 
-import transcriptJson from '../assets/media-tagger.json';
-import video from '../assets/video.mp4';
+import transcriptJson from '../assets/jeruselam_transcription.json';
+import video from '../assets/jeruselam.mp4';
 
 import '../../src/css/TranscriptEditor.css';
 
 class EditorView extends Component {
   constructor(props) {
     super(props);
-
-    const transcript = Transcript.fromMediaTagger(transcriptJson);
+    const transcriptJson2 = convertToJSON(transcriptJson)
+    const transcript = Transcript.fromJSON(transcriptJson2);
     const { editorState, speakers } = convertFromTranscript(transcript);
 
     this.state = {
