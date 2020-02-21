@@ -3,6 +3,16 @@ import { EditorBlock } from 'draft-js';
 import PropTypes from 'prop-types';
 
 const TranscriptEditorBlock = (props) => {
+/*   const { contentState } = props;
+  const entity = contentState.getEntity(entityKey);
+  const titleString = `${entity.data.start.toFixed(2)} - ${entity.data.end.toFixed(2)}`; */
+  const characterList = props.block.getCharacterList();
+  console.log('TranscriptEditorBlock props', props);
+  const contentState = props.contentState;
+  console.log('TranscriptEditorBlock characterList-->', characterList)
+  console.log('TranscriptEditorBlock contentState', contentState)
+  const start = contentState.getEntity(characterList.first().entity).data.start
+  const end = contentState.getEntity(characterList.last().entity).data.end
   const speakerSection = props.blockProps.showSpeakers ? (
     <div
       className="transcript-editor-speaker"
@@ -13,7 +23,7 @@ const TranscriptEditorBlock = (props) => {
         msUserSelect: 'none',
       }}
     >
-      Speaker {props.block.data.get('speaker') + 1}
+      Speaker {props.block.data.get('speaker') + 1} - {start + '-> ' + end}
     </div>
   ) : null;
 
