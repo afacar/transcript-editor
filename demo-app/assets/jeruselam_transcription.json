@@ -1,0 +1,885 @@
+[
+  {
+    "alternatives": [
+      {
+        "transcript": "Yüzyılın Anlaşması diyorlar. Yarın nasıl konuşmamı yapacaksın? Yüzyılın Anlaşması ne Anlaşması ya. Bu bir işgal projesidir. Kudüs bizim kırmızı çizgi ve Bugünkü Milli Güvenlik Kurulu toplantımızda da açıkladığı basın açıklamasında Özellikle bu konuya değindik. Yarın da inşallah yapacağım Konuşmam da Bu konu üzerinde hassasiyetle duracağım ama bizi Türk Milleti olarak Filistin'e bakışımız cennet mekan Sultan Abdülhamid Han",
+        "confidence": 0.912555456161499,
+        "words": [
+          {
+            "startTime": {
+              "nanos": 0,
+              "seconds": "0"
+            },
+            "endTime": {
+              "seconds": "1",
+              "nanos": 400
+            },
+            "word": "Yüzyılın",
+            "confidence": 0.7006387114524841,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "1",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "1",
+              "nanos": 800
+            },
+            "word": "Anlaşması",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "1",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "2",
+              "nanos": 500
+            },
+            "word": "diyorlar.",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "2",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "3",
+              "nanos": 200
+            },
+            "word": "Yarın",
+            "confidence": 0.8860275745391846,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "3",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "3",
+              "nanos": 500
+            },
+            "word": "nasıl",
+            "confidence": 0.8584485650062561,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "3",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "4",
+              "nanos": 0
+            },
+            "word": "konuşmamı",
+            "confidence": 0.9214082956314087,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "4",
+              "nanos": 0
+            },
+            "endTime": {
+              "seconds": "4",
+              "nanos": 500
+            },
+            "word": "yapacaksın?",
+            "confidence": 0.3768494427204132,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "4",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "5",
+              "nanos": 600
+            },
+            "word": "Yüzyılın",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "5",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "6",
+              "nanos": 0
+            },
+            "word": "Anlaşması",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "6",
+              "nanos": 0
+            },
+            "endTime": {
+              "seconds": "6",
+              "nanos": 800
+            },
+            "word": "ne",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "6",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "7",
+              "nanos": 200
+            },
+            "word": "Anlaşması",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "7",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "7",
+              "nanos": 500
+            },
+            "word": "ya.",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "7",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "8",
+              "nanos": 600
+            },
+            "word": "Bu",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "8",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "8",
+              "nanos": 800
+            },
+            "word": "bir",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "8",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "9",
+              "nanos": 200
+            },
+            "word": "işgal",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "9",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "10",
+              "nanos": 200
+            },
+            "word": "projesidir.",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "10",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "21",
+              "nanos": 300
+            },
+            "word": "Kudüs",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "21",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "22",
+              "nanos": 600
+            },
+            "word": "bizim",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "22",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "23",
+              "nanos": 400
+            },
+            "word": "kırmızı",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "23",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "23",
+              "nanos": 900
+            },
+            "word": "çizgi",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "23",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "26",
+              "nanos": 900
+            },
+            "word": "ve",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "26",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "30",
+              "nanos": 900
+            },
+            "word": "Bugünkü",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "30",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "32",
+              "nanos": 300
+            },
+            "word": "Milli",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "32",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "32",
+              "nanos": 900
+            },
+            "word": "Güvenlik",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "32",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "33",
+              "nanos": 400
+            },
+            "word": "Kurulu",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "33",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "34",
+              "nanos": 300
+            },
+            "word": "toplantımızda",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "34",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "34",
+              "nanos": 500
+            },
+            "word": "da",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "34",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "35",
+              "nanos": 900
+            },
+            "word": "açıkladığı",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "35",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "37",
+              "nanos": 300
+            },
+            "word": "basın",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "37",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "38",
+              "nanos": 300
+            },
+            "word": "açıklamasında",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "38",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "39",
+              "nanos": 900
+            },
+            "word": "Özellikle",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "39",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "40",
+              "nanos": 700
+            },
+            "word": "bu",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "40",
+              "nanos": 700
+            },
+            "endTime": {
+              "seconds": "41",
+              "nanos": 200
+            },
+            "word": "konuya",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "41",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "42",
+              "nanos": 200
+            },
+            "word": "değindik.",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "42",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "43",
+              "nanos": 500
+            },
+            "word": "Yarın",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "43",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "43",
+              "nanos": 700
+            },
+            "word": "da",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "43",
+              "nanos": 700
+            },
+            "endTime": {
+              "seconds": "43",
+              "nanos": 800
+            },
+            "word": "inşallah",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "43",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "45",
+              "nanos": 600
+            },
+            "word": "yapacağım",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "45",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "46",
+              "nanos": 500
+            },
+            "word": "Konuşmam",
+            "confidence": 0.7733360528945923,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "46",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "46",
+              "nanos": 800
+            },
+            "word": "da",
+            "confidence": 0.7733364105224609,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "46",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "47",
+              "nanos": 200
+            },
+            "word": "Bu",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "47",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "47",
+              "nanos": 500
+            },
+            "word": "konu",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "47",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "47",
+              "nanos": 900
+            },
+            "word": "üzerinde",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "47",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "48",
+              "nanos": 700
+            },
+            "word": "hassasiyetle",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "48",
+              "nanos": 700
+            },
+            "endTime": {
+              "seconds": "50",
+              "nanos": 600
+            },
+            "word": "duracağım",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "50",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "51",
+              "nanos": 200
+            },
+            "word": "ama",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "51",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "51",
+              "nanos": 800
+            },
+            "word": "bizi",
+            "confidence": 0.5322893261909485,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "51",
+              "nanos": 800
+            },
+            "endTime": {
+              "seconds": "52",
+              "nanos": 900
+            },
+            "word": "Türk",
+            "confidence": 0.8371570706367493,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "52",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "53",
+              "nanos": 300
+            },
+            "word": "Milleti",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "53",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "53",
+              "nanos": 400
+            },
+            "word": "olarak",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "53",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "55",
+              "nanos": 600
+            },
+            "word": "Filistin'e",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "55",
+              "nanos": 600
+            },
+            "endTime": {
+              "seconds": "56",
+              "nanos": 300
+            },
+            "word": "bakışımız",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "56",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "57",
+              "nanos": 700
+            },
+            "word": "cennet",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "57",
+              "nanos": 700
+            },
+            "endTime": {
+              "seconds": "58",
+              "nanos": 200
+            },
+            "word": "mekan",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "58",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "58",
+              "nanos": 500
+            },
+            "word": "Sultan",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "58",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "59",
+              "nanos": 400
+            },
+            "word": "Abdülhamid",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "59",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "59",
+              "nanos": 800
+            },
+            "word": "Han",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          }
+        ],
+        "startTime": {
+          "nanos": 0,
+          "seconds": "0"
+        },
+        "endTime": {
+          "seconds": "59",
+          "nanos": 800
+        }
+      }
+    ],
+    "languageCode": "tr-tr"
+  },
+  {
+    "alternatives": [
+      {
+        "transcript": "Bizim de bugün bakışımız yaylı kardeşlerim satılık değil.",
+        "confidence": 0.8706854581832886,
+        "words": [
+          {
+            "startTime": {
+              "seconds": "59",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "61",
+              "nanos": 300
+            },
+            "word": "Bizim",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "61",
+              "nanos": 300
+            },
+            "endTime": {
+              "seconds": "61",
+              "nanos": 400
+            },
+            "word": "de",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "61",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "61",
+              "nanos": 700
+            },
+            "word": "bugün",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "61",
+              "nanos": 700
+            },
+            "endTime": {
+              "seconds": "62",
+              "nanos": 400
+            },
+            "word": "bakışımız",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "62",
+              "nanos": 400
+            },
+            "endTime": {
+              "seconds": "69",
+              "nanos": 500
+            },
+            "word": "yaylı",
+            "confidence": 0.5080798864364624,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "69",
+              "nanos": 500
+            },
+            "endTime": {
+              "seconds": "70",
+              "nanos": 200
+            },
+            "word": "kardeşlerim",
+            "confidence": 0.9254699945449829,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "70",
+              "nanos": 200
+            },
+            "endTime": {
+              "seconds": "71",
+              "nanos": 900
+            },
+            "word": "satılık",
+            "confidence": 0.7370585799217224,
+            "speakerTag": 1
+          },
+          {
+            "startTime": {
+              "seconds": "71",
+              "nanos": 900
+            },
+            "endTime": {
+              "seconds": "72",
+              "nanos": 800
+            },
+            "word": "değil.",
+            "confidence": 0.9442601203918457,
+            "speakerTag": 1
+          }
+        ],
+        "startTime": {
+          "seconds": "59",
+          "nanos": 900
+        },
+        "endTime": {
+          "seconds": "72",
+          "nanos": 800
+        }
+      }
+    ],
+    "languageCode": "tr-tr"
+  }
+]
