@@ -111,7 +111,9 @@ class EditorView extends Component {
         <div className="row">
           <div className="col-5">
             <div>
-              <VideoPlayer src={video} onTimeUpdate={this.handleTimeUpdate} />
+              <VideoPlayer 
+              //thumbnail TODO Put Thumbnail of video, undefined for audio 
+              src={video} onTimeUpdate={this.handleTimeUpdate} />
               <div>
                 <input
                   type="file"

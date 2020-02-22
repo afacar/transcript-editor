@@ -39,9 +39,10 @@ class VideoPlayer extends Component {
           src={this.props.src}
           controls
           style={{ width: '100%' }}
+          poster={this.props.poster ||'../assets/audio_thumbnail.png'}
         >
           <BigPlayButton position="center" />
-          <ControlBar autoHide={false} >
+          <ControlBar>
             <PlayToggle />
             <ReplayControl seconds={5} order={2.1} />
             <ForwardControl seconds={5} order={3.1} />
