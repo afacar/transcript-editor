@@ -57,7 +57,7 @@ class VideoPlayer extends Component {
 }
 
 VideoPlayer.propTypes = {
-  src: PropTypes.string.isRequired,
+  //src: PropTypes.string.isRequired,
   onTimeUpdate: PropTypes.func,
 };
 

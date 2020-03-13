@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Transcript } from 'transcript-model';
-
+import { EditorState } from "draft-js";
 import TranscriptEditor, {
   convertFromTranscript,
   convertToTranscript,
@@ -11,8 +11,7 @@ import TranscriptEditor, {
 import VideoPlayer from './VideoPlayer';
 
 import transcriptJson from '../assets/jeruselam_transcription.json';
-import video from '../assets/jeruselam.mp4';
-
+import { Col, Row } from "react-bootstrap";
 import '../../src/css/TranscriptEditor.css';
 
 class EditorView extends Component {
@@ -23,8 +22,9 @@ class EditorView extends Component {
     const { editorState, speakers } = convertFromTranscript(transcript);
 
     this.state = {
-      editorState,
+      editorState: EditorState.createEmpty(),
       speakers,
+      videoSrc: null,
       currentTime: 0,
       showSpeakers: true,
       decorator: 'withTime',
@@ -39,9 +39,10 @@ class EditorView extends Component {
     this.handleDecoratorChange = this.handleDecoratorChange.bind(this);
     this.handleShowSpeakersChange = this.handleShowSpeakersChange.bind(this);
     this.handleTimeUpdate = this.handleTimeUpdate.bind(this);
-    this.handleLoadTranscript = this.handleLoadTranscript.bind(this);
+    this.handleLoadVideo = this.handleLoadVideo.bind(this);
     this.loadTranscript = this.loadTranscript.bind(this);
     this.saveTranscript = this.saveTranscript.bind(this);
+    this.insertTime = this.insertTime.bind(this);
   }
 
   componentDidMount() {
@@ -67,10 +68,14 @@ class EditorView extends Component {
     this.setState({ currentTime: time });
   }
 
-  handleLoadTranscript() {
-    const file = this.fileInput.files[0];
-    this.fileInput.value = '';
+  handleLoadVideo() {
+    const file = this.mediaInput.files[0];
+    this.mediaInput.value = '';
 
+    const objURL = URL.createObjectURL(file)
+    console.log('objURL', objURL)
+    this.setState({ videoSrc: objURL })
+    return;
     const fileReader = new FileReader();
 
     fileReader.onload = (event) => {
@@ -105,94 +110,88 @@ class EditorView extends Component {
     window.open(URL.createObjectURL(blob));
   }
 
+  insertTime() {
+    console.log('insert time is ', this.state.currentTime);
+    const editorState = this.state.editorState
+    const selectionState = editorState.getSelection();
+    const startKey = selectionState.getStartKey();
+    const selectedBlock = editorState.getCurrentContent().getBlockForKey(startKey);
+    console.log('and selectedBlock ', selectedBlock);
+
+  }
+
   render() {
     return (
-      <div>
-        <div className="row">
-          <div className="col-5">
+      <Row className="row-container">
+        <Col xs={5}>
+          <div>
+            <VideoPlayer
+              src={this.state.videoSrc}
+              onTimeUpdate={this.handleTimeUpdate} />
             <div>
-              <VideoPlayer 
-              //thumbnail TODO Put Thumbnail of video, undefined for audio 
-              src={video} onTimeUpdate={this.handleTimeUpdate} />
-              <div>
+              <input
+                type="file"
+                ref={(c) => { this.mediaInput = c; }}
+                onChange={this.handleLoadVideo}
+                accept="audio/*, video/*"
+              />
+              or
+                <button
+                onClick={this.getURL}
+                type="button"
+                className="btn btn-primary mr-2 btn-sm"
+              >
+                Enter URL
+                  </button>
+              <div className="btn-toolbar mt-2">
+                <button
+                  onClick={this.loadTranscript}
+                  type="button"
+                  className="btn btn-primary mr-2 btn-sm"
+                >
+                  Load transcript
+                  </button>
+
+                <button
+                  onClick={this.saveTranscript}
+                  type="button"
+                  className="btn btn-primary mr-2 btn-sm"
+                >
+                  Save transcript
+                  </button>
+
+                <button
+                  type="button"
+                  className="btn btn-primary btn-sm"
+                  onClick={this.insertTime}
+                >
+                  Insert Time
+                  </button>
+              </div>
+            </div>
+            <div className="form-group row">
+              <label className="col-sm-4 col-form-label col-form-label-sm">Show speakers</label>
+              <div className="col-sm-8">
                 <input
-                  type="file"
-                  ref={(c) => {
-                    this.fileInput = c;
-                  }}
-                  style={{ display: 'none' }}
-                  onChange={this.handleLoadTranscript}
+                  type="checkbox"
+                  checked={this.state.showSpeakers}
+                  onChange={this.handleShowSpeakersChange}
                 />
-                <div className="btn-toolbar mt-2">
-                  <button
-                    onClick={this.loadTranscript}
-                    type="button"
-                    className="btn btn-primary mr-2 btn-sm"
-                  >
-                    Load transcript
-                  </button>
-
-                  <button
-                    onClick={this.saveTranscript}
-                    type="button"
-                    className="btn btn-primary mr-2 btn-sm"
-                  >
-                    Save transcript
-                  </button>
-
-                  <button
-                    type="button"
-                    className="btn btn-primary btn-sm"
-                    onClick={() => {
-                      this.editor.focus();
-                    }}
-                  >
-                    Focus editor
-                  </button>
-                </div>
-              </div>
-              <div className="form-group mt-3 row">
-                <label className="col-sm-4 col-form-label col-form-label-sm">Decorator</label>
-                <div className="col-sm-8">
-                  <select
-                    value={this.state.decorator}
-                    onChange={this.handleDecoratorChange}
-                    className="form-control form-control-sm"
-                    id="decoratorInput"
-                  >
-                    {Object.keys(this.state.decorators).map(decorator => (
-                      <option value={decorator} key={decorator}>
-                        {decorator}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-              <div className="form-group row">
-                <label className="col-sm-4 col-form-label col-form-label-sm">Show speakers</label>
-                <div className="col-sm-8">
-                  <input
-                    type="checkbox"
-                    checked={this.state.showSpeakers}
-                    onChange={this.handleShowSpeakersChange}
-                  />
-                </div>
               </div>
             </div>
           </div>
-          <div className="col-7">
-            <TranscriptEditor
-              ref={(editor) => {
-                this.editor = editor;
-              }}
-              editorState={this.state.decorators[this.state.decorator](this.state.editorState)}
-              speakers={this.state.speakers}
-              onChange={this.handleChange}
-              showSpeakers={this.state.showSpeakers}
-            />
-          </div>
-        </div>
-      </div>
+        </Col>
+        <Col xs={7} className="editor-column">
+          <TranscriptEditor
+            ref={(editor) => { this.editor = editor; }}
+            editorState={this.state.editorState}
+            speakers={this.state.speakers}
+            timestamp={this.state.currentTime}
+            onChange={this.handleChange}
+            showSpeakers={this.state.showSpeakers}
+          />
+        </Col>
+      </Row>
     );
   }
 }

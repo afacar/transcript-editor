@@ -3,14 +3,12 @@ import { EditorBlock } from 'draft-js';
 import PropTypes from 'prop-types';
 
 const TranscriptEditorBlock = (props) => {
-/*   const { contentState } = props;
-  const entity = contentState.getEntity(entityKey);
-  const titleString = `${entity.data.start.toFixed(2)} - ${entity.data.end.toFixed(2)}`; */
+  console.log('editorblock props', props);
   const characterList = props.block.getCharacterList();
   const contentState = props.contentState;
-  const start = contentState.getEntity(characterList.first().entity).data.start
-  const end = contentState.getEntity(characterList.last().entity).data.end
-  const speakerSection = props.blockProps.showSpeakers ? (
+  //const start = contentState.getEntity(characterList.first().entity).data.start
+  //const end = contentState.getEntity(characterList.last().entity).data.end
+  const timestamp = props.blockProps.showSpeakers ? (
     <div
       className="transcript-editor-speaker"
       contentEditable={false}
@@ -20,13 +18,13 @@ const TranscriptEditorBlock = (props) => {
         msUserSelect: 'none',
       }}
     >
-      Speaker {props.block.data.get('speaker') + 1} - {start + '-> ' + end}
+      Time: {props.block.data.get('timestamp')}
     </div>
   ) : null;
 
   return (
     <div className="transcript-editor-block">
-      {speakerSection}
+      {timestamp}
       <div className="transcript-editor-text">
         <EditorBlock {...props} />
       </div>

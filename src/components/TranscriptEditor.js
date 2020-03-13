@@ -35,7 +35,7 @@ class TranscriptEditor extends Component {
       this.sendSelectionChange(contentState, selectionState);
     }
 
-    if (lastChangeType !== 'undo' && contentState !== previousEditorState.getCurrentContent()) {
+    /* if (lastChangeType !== 'undo' && contentState !== previousEditorState.getCurrentContent()) {
       const startKey = selectionState.getStartKey();
       const previousStartKey = previousSelectionState.getStartKey();
 
@@ -132,7 +132,7 @@ class TranscriptEditor extends Component {
         speakers: this.props.speakers,
       });
       return;
-    }
+    } */
     this.props.onChange({
       editorState,
       speakers: this.props.speakers,
@@ -170,6 +170,7 @@ class TranscriptEditor extends Component {
     return {
       component: TranscriptEditorBlock,
       props: {
+        timestamp: this.props.timestamp,
         speakers: this.props.speakers,
         showSpeakers: this.props.showSpeakers,
       },
@@ -209,6 +210,7 @@ class TranscriptEditor extends Component {
   }
 
   handleReturn() {
+    console.log('handle return')
     const { editorState } = this.props;
     const contentState = editorState.getCurrentContent();
     const selectionState = editorState.getSelection();
@@ -217,10 +219,8 @@ class TranscriptEditor extends Component {
     const selectedBlock = editorState.getCurrentContent().getBlockForKey(startKey);
     const entityKeyBefore = selectedBlock.getEntityAt(startOffset - 1);
     const entityKeyAfter = selectedBlock.getEntityAt(startOffset);
-    if (
-      (entityKeyBefore && contentState.getEntity(entityKeyBefore).type === TRANSCRIPT_SPACE) ||
-      (entityKeyAfter && contentState.getEntity(entityKeyAfter).type === TRANSCRIPT_SPACE)
-    ) {
+    const blockText = selectedBlock.getText()
+    if (blockText) {
       return false;
     }
     return true;
